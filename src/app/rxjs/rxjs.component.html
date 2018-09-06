@@ -1,0 +1,31 @@
+<h5>Posts (arr)</h5>
+<ul class="list-group mb-10" >
+   
+  <li class="list-group-item" *ngFor="let post of posts">{{post}}</li>
+</ul>
+
+<h5>Posts (obs)</h5>
+<ul class="list-group mb-10" *ngIf="posts$ | async as posts">
+  
+  <li class="list-group-item" *ngFor="let post of posts">{{post}}</li>
+</ul>
+
+
+
+<h5>comments (obs)</h5>
+<ul class="list-group mb-10" *ngIf="comments$ | async as comments">
+    
+  <li class="list-group-item" *ngFor="let comment of comments">{{comment.name}}</li>
+</ul>
+
+
+
+<div class="row mt-5">
+  <div class="col-3 mx-auto ">
+    <button class="btn btn-primary btn-block" (click)="example1()">Ex1</button>
+    <button class="btn btn-primary btn-block" (click)="example2()">Ex2</button>
+    <button class="btn btn-primary btn-block" (click)="example3()">Ex3</button>
+    <button class="btn btn-primary btn-block" (click)="example4()">Ex4</button>
+    <button class="btn btn-primary btn-block" (click)="reset()">Reset</button>
+  </div>
+</div>

@@ -3,10 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PromisesComponent } from './promises/promises.component';
+import { CallbacksComponent } from './callbacks/callbacks.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
+import { NavComponent } from './nav/nav.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PromisesComponent,
+    CallbacksComponent,
+    RxjsComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
